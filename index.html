@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="theme-color" content="#F4F3F1">
+        <meta name="description" content="A little something for Vient Syahneza.">
+        <title>Do you wanna be my gf?</title>
+
+        <!-- Typography -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        >
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- JavaScript -->
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Lewati ke konten</a>
+
+        <main id="main-content">
+            <!-- Homepage -->
+            <section
+                class="page-view home-view"
+                id="home-view"
+                data-page-view
+                aria-labelledby="home-title"
+            >
+                <div class="heart-field" data-heart-field aria-hidden="true"></div>
+
+                <div class="page-view__content">
+                    <!-- Header -->
+                    <header class="site-header">
+                        <a
+                            class="wordmark"
+                            href="#home"
+                            data-view-link="home"
+                            aria-label="A Little Something for Vient, beranda"
+                        >
+                            a little something
+                            <span>for You</span>
+                        </a>
+                    </header>
+
+                    <section class="home-section section-shell">
+                        <div class="home-copy">
+                            <p class="eyebrow">Sebuah surat dariku, khusus untukmu</p>
+                            <h1 id="home-title">
+                                A Little Something
+                                <em>for you "Vient"</em>
+                            </h1>
+                            <p class="home-intro">
+                                Hai Vientku, aku tau kamu kangen sama aku,
+                                jadi aku membuatkan LoveLetter ini khusus untuk mu.
+                            </p>
+                            <a
+                                class="letter-button"
+                                href="#letter"
+                                data-view-link="letter"
+                            >
+                                Klik Ini Dong Cantik
+                            </a>
+                        </div>
+
+                        <!-- Music Player -->
+                        <aside class="music-entry" aria-label="Playlist pilihan">
+                            <div class="music-entry__heading">
+                                <span class="music-entry__icon" aria-hidden="true">♫</span>
+                                <span class="music-entry__text">
+                                    <span class="music-entry__label">Dengarkan lagu</span>
+                                    <span class="music-entry__title">Pilih lagu untuk diputar</span>
+                                </span>
+                            </div>
+
+                            <section
+                                class="player-section"
+                                id="music-player"
+                                aria-label="Pemutar musik"
+                                aria-hidden="true"
+                                inert
+                            >
+                                <div class="player-card">
+                                    <div class="player-cover">
+                                        <img
+                                            data-track-cover
+                                            src="assets/covers/Amethyst.jpeg"
+                                            alt="Cover album Amethyst oleh Pastel Ghost"
+                                            decoding="async"
+                                        >
+                                    </div>
+
+                                    <div class="player-content">
+                                        <div class="player-heading">
+                                            <div>
+                                                <p class="eyebrow">Sedang diputar</p>
+                                                <h2 data-track-title>Judul lagu</h2>
+                                                <p data-track-artist>Nama artis</p>
+                                            </div>
+                                            <button
+                                                class="icon-button"
+                                                type="button"
+                                                data-close-player
+                                                aria-label="Sembunyikan pemutar"
+                                            >
+                                                ×
+                                            </button>
+                                        </div>
+
+                                        <div class="track-progress">
+                                            <label class="visually-hidden" for="track-progress">
+                                                Posisi lagu
+                                            </label>
+                                            <input
+                                                id="track-progress"
+                                                data-progress
+                                                type="range"
+                                                min="0"
+                                                max="100"
+                                                value="0"
+                                            >
+                                            <div class="time-row">
+                                                <span data-current-time>0:00</span>
+                                                <span data-duration>0:00</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="player-controls">
+                                            <button
+                                                class="icon-button"
+                                                type="button"
+                                                data-previous
+                                                aria-label="Lagu sebelumnya"
+                                            >
+                                                <svg
+                                                    class="control-icon"
+                                                    viewBox="0 0 24 24"
+                                                    aria-hidden="true"
+                                                    focusable="false"
+                                                >
+                                                    <path d="M6 5h2v14H6zM19 6v12L9 12z"/>
+                                                </svg>
+                                            </button>
+
+                                            <button
+                                                class="play-button"
+                                                type="button"
+                                                data-play
+                                                aria-label="Putar"
+                                            >
+                                                <svg
+                                                    class="control-icon icon-play"
+                                                    viewBox="0 0 24 24"
+                                                    aria-hidden="true"
+                                                    focusable="false"
+                                                >
+                                                    <path d="M7.5 4.9c0-.78.86-1.26 1.53-.85l11.1 6.72a1.42 1.42 0 0 1 0 2.44l-11.1 6.72c-.67.41-1.53-.07-1.53-.85z"/>
+                                                </svg>
+                                                <svg
+                                                    class="control-icon icon-pause"
+                                                    viewBox="0 0 24 24"
+                                                    aria-hidden="true"
+                                                    focusable="false"
+                                                >
+                                                    <rect x="6" y="5" width="4" height="14" rx="1"/>
+                                                    <rect x="14" y="5" width="4" height="14" rx="1"/>
+                                                </svg>
+                                            </button>
+
+                                            <button
+                                                class="icon-button"
+                                                type="button"
+                                                data-next
+                                                aria-label="Lagu berikutnya"
+                                            >
+                                                <svg
+                                                    class="control-icon"
+                                                    viewBox="0 0 24 24"
+                                                    aria-hidden="true"
+                                                    focusable="false"
+                                                >
+                                                    <path d="M16 5h2v14h-2zM5 6v12l10-6z"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div
+                                class="track-list"
+                                data-track-list
+                                aria-label="Pilih salah satu lagu"
+                            >
+                                <button
+                                    class="track-option"
+                                    type="button"
+                                    data-track-select="0"
+                                    aria-pressed="false"
+                                >
+                                    <span class="track-option__number">01</span>
+                                    <span class="track-option__cover">
+                                        <img
+                                            src="assets/covers/Amethyst.jpeg"
+                                            alt=""
+                                            loading="lazy"
+                                            decoding="async"
+                                        >
+                                    </span>
+                                    <span class="track-option__copy">
+                                        <span class="track-option__title">Amethyst</span>
+                                        <span class="track-option__artist">Pastel Ghost</span>
+                                    </span>
+                                    <span class="track-option__play" aria-hidden="true">
+                                        <svg
+                                            class="control-icon"
+                                            viewBox="0 0 24 24"
+                                            focusable="false"
+                                        >
+                                            <path d="M7.5 4.9c0-.78.86-1.26 1.53-.85l11.1 6.72a1.42 1.42 0 0 1 0 2.44l-11.1 6.72c-.67.41-1.53-.07-1.53-.85z"/>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <button
+                                    class="track-option"
+                                    type="button"
+                                    data-track-select="1"
+                                    aria-pressed="false"
+                                >
+                                    <span class="track-option__number">02</span>
+                                    <span class="track-option__cover">
+                                        <img
+                                            src="assets/covers/Bayangkan.jpeg"
+                                            alt=""
+                                            loading="lazy"
+                                            decoding="async"
+                                        >
+                                    </span>
+                                    <span class="track-option__copy">
+                                        <span class="track-option__title">Bayangkan</span>
+                                        <span class="track-option__artist">Hindia</span>
+                                    </span>
+                                    <span class="track-option__play" aria-hidden="true">
+                                        <svg
+                                            class="control-icon"
+                                            viewBox="0 0 24 24"
+                                            focusable="false"
+                                        >
+                                            <path d="M7.5 4.9c0-.78.86-1.26 1.53-.85l11.1 6.72a1.42 1.42 0 0 1 0 2.44l-11.1 6.72c-.67.41-1.53-.07-1.53-.85z"/>
+                                        </svg>
+                                    </span>
+                                </button>
+
+                                <button
+                                    class="track-option"
+                                    type="button"
+                                    data-track-select="2"
+                                    aria-pressed="false"
+                                >
+                                    <span class="track-option__number">03</span>
+                                    <span class="track-option__cover">
+                                        <img
+                                            src="assets/covers/505.jpeg"
+                                            alt=""
+                                            loading="lazy"
+                                            decoding="async"
+                                        >
+                                    </span>
+                                    <span class="track-option__copy">
+                                        <span class="track-option__title">505</span>
+                                        <span class="track-option__artist">Arctic Monkeys</span>
+                                    </span>
+                                    <span class="track-option__play" aria-hidden="true">
+                                        <svg
+                                            class="control-icon"
+                                            viewBox="0 0 24 24"
+                                            focusable="false"
+                                        >
+                                            <path d="M7.5 4.9c0-.78.86-1.26 1.53-.85l11.1 6.72a1.42 1.42 0 0 1 0 2.44l-11.1 6.72c-.67.41-1.53-.07-1.53-.85z"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </aside>
+
+                        <span class="home-index" aria-hidden="true">01 — 02</span>
+                    </section>
+                </div>
+            </section>
+
+            <!-- Letter Page -->
+            <section
+                class="page-view letter-view"
+                id="letter-view"
+                data-page-view
+                aria-labelledby="letter-title"
+                hidden
+            >
+                <div class="heart-field" data-heart-field aria-hidden="true"></div>
+
+                <div class="page-view__content">
+                    <header class="letter-topbar">
+                        <a class="letter-back" href="#home" data-view-link="home">
+                            <span aria-hidden="true">←</span>
+                            Back To Homepage
+                        </a>
+                        <span class="eyebrow">02 — Love Letter</span>
+                    </header>
+
+                    <section class="letter-section section-shell">
+                        <header class="section-heading reveal">
+                            <p class="eyebrow">For Vient Syahneza</p>
+                            <h1 id="letter-title">
+                                Aku membuatkan Website ini
+                                <em>untukmu.</em>
+                            </h1>
+                            <p class="section-placeholder">Aku harap kamu membaca nya dengan senang hati</p>
+                        </header>
+
+                        <!-- Photo Gallery and Letter -->
+                        <article class="letter-layout" aria-label="Surat untuk Vient">
+                            <p class="letter-paragraph reveal">
+                                Hai Vient, Ingat tidak awal awal kita saling mengenal?,
+                                uniknya itu benar benar tidak di sengaja, aku tiba tiba dijadikan
+                                tempat bersandar mu bersama kedua temanmu, mulai dari situ kamu mulai sering
+                                berbaring di paha ku, dan itulah awal Sebuah cerita diantara Kita.
+                            </p>
+                            <figure class="photo photo--landscape reveal">
+                                <img
+                                    src="assets/photos/photo-01-landscape.jpg"
+                                    alt="Foto landscape pertama"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                                <figcaption>[Apakah kamu pernah sadar bahwa kamu sangatlah cantik]</figcaption>
+                            </figure>
+
+                            <p class="letter-paragraph letter-paragraph--offset reveal">
+                                Di saat kita kenal, kita bermain dan bercanda bersama, dan Ingat tidak 
+                                hal memalukan yang kita lakukan?, kita bermain menggunakan pisau di ruang osis,
+                                mungkin terdengar memalukan bagi seseorang, tapi itulah awal keakraban kita dimulai.
+                            </p>
+                            <figure class="photo photo--landscape reveal">
+                                <img
+                                    src="assets/photos/photo-02-landscape.jpg"
+                                    alt="Foto landscape kedua"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                                <figcaption>[Apakah kamu tidak merindukan masa itu?]</figcaption>
+                            </figure>
+
+                            <p class="letter-paragraph reveal">
+                                Dari kedua temanmu itu dan termasuk dirimu, kita sudah saling mengenal
+                                satu sama lain, Tapi... entah kenapa aku merasakan hal yang berbeda
+                                jika diriku bersama mu, disitulah aku mulai merasakan sebuah perasaan kepadamu,
+                                aku sangatlah takut untuk mengungkapkan nya pada saat itu,
+                                bahkan untuk aku ingin chat denganmu aku harus menggunakan cara ngechat kamu 
+                                dengan nomor lain dan menyamar sebagai orang asing yang meminta nomer diriku sendiri,
+                                Lucunya... yang meminta nya adalah diriku sendiri.
+                            </p>
+                            <figure class="photo photo--portrait photo--small reveal">
+                                <img
+                                    src="assets/photos/photo-03-portrait.jpg"
+                                    alt="Foto portrait ketiga"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                                <figcaption>[Lihat lah keindahan yang Tuhan ciptakan untuk ku]</figcaption>
+                            </figure>
+
+                            <figure class="photo photo--landscape photo--wide reveal">
+                                <img
+                                    src="assets/photos/photo-04-landscape.jpg"
+                                    alt="Foto landscape keempat"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                                <figcaption>[Kamu memiliki hal yang tidak dimiliki oleh orang lain]</figcaption>
+                            </figure>
+                            <p class="letter-paragraph letter-paragraph--offset reveal">
+                                Menurutku, kamu adalah peran penting di hidupku yang tak bisa untuk aku lupakan...,
+                                aku berterimakasih karna kamu sudah hadir di hidup ku dan menemani cerita hidupku,
+                                mungkin... jika bukan karna Dirimu, Hidupku rasanya seperti sebuah Ruangan yang luas
+                                namun tak ada satupun Furniture, tapi kamu lah yang menjadi sebuah Furniture itu untuk
+                                mengisi Ruangan ku, Aku sangat bangga memiliki mu, Ya... aku sangat bangga.
+                            </p>
+                            <figure class="photo photo--portrait photo--last reveal">
+                                <img
+                                    src="assets/photos/photo-05-portrait.jpg"
+                                    alt="Foto portrait kelima"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                                <figcaption>[Vient Syahneza, someone who is special to me]</figcaption>
+                            </figure>
+                        </article>
+
+                        <!-- Final Section -->
+                        <footer class="letter-closing reveal">
+                            <p class="eyebrow">Sampai di sini aja ya</p>
+                            <h2>Kamu begitu cerewet, Dan karna cerewetmu hidupku lebih berwarna.</h2>
+                            <a
+                                class="button-link"
+                                href="https://wa.me/6289513881084?text=I%20Love%20You"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Klik ini dong sayank
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                            <p class="closing-whisper">do you wanna be my girlfriend?</p>
+                        </footer>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <!-- Shared Audio Instance -->
+        <audio data-audio preload="none"></audio>
+
+        <!-- Dynamic Island -->
+        <aside class="dynamic-island" data-island aria-label="Sedang diputar" hidden>
+            <div class="island-main">
+                <span class="island-indicator" aria-hidden="true"></span>
+                <span class="island-track">
+                    <span data-island-title>Judul lagu</span>
+                    <small data-island-artist>Nama artis</small>
+                </span>
+                <button
+                    class="island-play"
+                    type="button"
+                    data-island-play
+                    aria-label="Putar"
+                >
+                    <svg
+                        class="control-icon icon-play"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                    >
+                        <path d="M7.5 4.9c0-.78.86-1.26 1.53-.85l11.1 6.72a1.42 1.42 0 0 1 0 2.44l-11.1 6.72c-.67.41-1.53-.07-1.53-.85z"/>
+                    </svg>
+                    <svg
+                        class="control-icon icon-pause"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                    >
+                        <rect x="6" y="5" width="4" height="14" rx="1"/>
+                        <rect x="14" y="5" width="4" height="14" rx="1"/>
+                    </svg>
+                </button>
+                <button
+                    class="island-expand"
+                    type="button"
+                    data-island-expand
+                    aria-label="Tampilkan playlist"
+                    aria-expanded="false"
+                >
+                    <svg
+                        class="control-icon icon-chevron"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                    >
+                        <path d="m6 9 6 6 6-6"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div
+                class="island-playlist"
+                data-island-playlist
+                aria-hidden="true"
+                inert
+            >
+                <div class="island-playlist__content">
+                    <button type="button" data-island-track="0">Amethyst — Pastel Ghost</button>
+                    <button type="button" data-island-track="1">Bayangkan — Hindia</button>
+                    <button type="button" data-island-track="2">505 — Arctic Monkeys</button>
+                </div>
+            </div>
+        </aside>
+    </body>
+</html>
